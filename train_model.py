@@ -64,8 +64,7 @@ if __name__ == "__main__":
     model = CNN(num_classes=4).to(device)
 
     counts = np.bincount(train_data["y"])
-    weights = len(train_data["y"]) / (4.0 * counts)
-    class_weights = torch.tensor(weights, dtype=torch.float32).to(device)
+    
 
     loss = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
