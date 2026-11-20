@@ -5,7 +5,7 @@ import torch.nn as nn
 from torch.utils.data import TensorDataset, DataLoader
 
 train_data = np.load("train_ecg.npz")
-test_data = np.load("unseen_test_ecg.npz")
+test_data = np.load("unseen_profiles.npz")
 
 train_ds = TensorDataset(
     torch.tensor(train_data["X_time"]).unsqueeze(1),
