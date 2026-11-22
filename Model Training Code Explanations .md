@@ -5,7 +5,7 @@ are loaded into the script.
 2. The arrays are converted into PyTorch tensors and placed in a Torch dataset.
 3. The dataset is loaded into a DataLoader with a specified batch size, which holds the data for the model to be trained on it.
 4. The CNN is trained on the data using CrossEntropyLoss and Adam optimizer.
-5. 
+   
 <img width="689" height="422" alt="image" src="https://github.com/user-attachments/assets/09579263-4459-4755-9be9-26fcdfb8686d" />
 
 The snippet above loads the training data parallel arrays, converts them into PyTorch-ready tensors, unsqueezes (unzipping) them, and creates a PyTorch-ready dataset out of them.
