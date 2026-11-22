@@ -48,5 +48,6 @@ graph.
 
 The beat waveform, its frequency spectrum, and its label were added to the 3 parallel arrays that will later be dumped into the final dataset. The label was extracted by mapping
 the symbol from the annotation using a Dictionary.
+
 <img width="386" height="141" alt="image" src="https://github.com/user-attachments/assets/ee1e8b38-6b68-476e-94af-5cc0b3ca4a97" />
 
