@@ -13,6 +13,8 @@ The code above loads the training data, and selects 75 random arrhythmias in the
 
 <img width="1288" height="479" alt="image" src="https://github.com/user-attachments/assets/93fd635c-8769-4694-a5b2-0f8dadc05f2b" />
 
+**Fine-Tuning Process**
+
 In the 3 concatenate lines, these arrhythmia beats were also pooled with the calibration normal beats (30) to create the fine-tuning dataset. The _requires_grad = false_ lines 
 freeze the weights of the waveform and frequency domain layers. This is so that only the classifier head is tuned and adapted, as tuning all of the model's parameters would
 force it to relearn patterns on the features of the test record, causing overfitting. 
