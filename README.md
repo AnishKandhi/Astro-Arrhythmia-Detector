@@ -47,3 +47,6 @@ feature extraction layers to prevent overfitting on the test data during fine-tu
 4. **Data Leakage** - To prevent data leakage, I made sure that the arrhythmias I selected to fine-tune the classifier head were not part of the test records and were
 only in the training data purely to remind the model what an arrhythmia looked like. This ensures the model's performance on its test data was not influenced by
 its exposure to the beats beforehand.
+
+**30 Second Demo**
+https://drive.google.com/file/d/1m7ovAsSMUlOSz3d60T6RdHDzMYHu8HJA/view?usp=sharing
